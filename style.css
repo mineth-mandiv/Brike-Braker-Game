@@ -1,0 +1,61 @@
+.container {
+    height: 400px;
+    width: 80%;
+    margin-left: 5%;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 20px;
+    position: relative;
+    background-color: darkgrey;
+}
+
+.score,
+.lives {
+    font-size: 3em;
+    padding: 0 20px;
+}
+
+.brick {
+    position: absolute;
+    width: 91px;
+    height: 40px;
+    border: 1px solid white;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+}
+
+#gameOver {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+    display: block;
+}
+
+.paddle {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: white;
+    bottom: 30px;
+    z-index: 1;
+}
